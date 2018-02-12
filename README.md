@@ -29,12 +29,14 @@ A sample for Android JNI
 ### 第七步
 使用.so库
 <br/>打开app/build.gradle文件，在android{}内加入：
+```
 sourceSets {
     main() {
         jniLibs.srcDirs = ['src/main/libs']
         jni.srcDirs = []
     }
 }
+```
 <br/>就会生成jniLibs目录。
 <br>同时，在gradle.properties文件中加入语句：
 android.useDeprecatedNdk=true
