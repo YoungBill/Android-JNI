@@ -13,8 +13,10 @@ A sample for Android JNI
 <br/>mkdir jni
 ### 第四步
 生成.h文件
+<br/>首先进入debug目录
+<br/>cd /home/baina/AndroidStudioProjects/AndroidJNI/app/build/intermediates/classes/debug
 <br/>运行以下命令：
-<br/>javah -d jni -classpath /opt/android-sdk-linux/platforms/android-24/android.jar:../app/build/intermediates/classes/debug/com.android.jni.MainActivity
+<br/>javah -d /home/baina/AndroidStudioProjects/AndroidJNI/app/src/main/jni -cp /home/baina/SDK/android-sdk-linux/platforms/android-24/android.jar: com.android.jni.MainActivity
 <br/>就会在jni目录下生成com_android_jni_MainActivity.h文件。
 <br/>里面有函数声明Java_com_android_jni_MainActivity_helloJNI
 ### 第五步

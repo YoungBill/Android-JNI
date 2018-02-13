@@ -67,7 +67,7 @@ extern "C" {
  * Signature: ()Ljava/lang/String;
  */
 JNIEXPORT jstring JNICALL Java_com_android_jni_MainActivity_helloJNI
-   (JNIEnv *env, jobject obj) ;
+  (JNIEnv *, jobject);
 
 #ifdef __cplusplus
 }
